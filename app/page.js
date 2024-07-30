@@ -1,23 +1,32 @@
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+"use client";
 
-import AboutUs from "./components/AboutUs";
-import Blog from "./components/Blog";
-import Contacts from "./components/Contacts";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import AppHeader from './components/AppHeader';
-import AppFooter from './components/AppFooter';
+import React from "react";
+import { Layout } from "antd";
+import AppHeader from "./components/AppHeader";
+import AppFooter from "./components/AppFooter";
 
+const { Content } = Layout;
 
 export default function Home() {
   return (
     <Layout>
-    <AppHeader/> 
-    <div>
-      <h1 style={{background: '#000000'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h1>
-    </div>
-    <AppFooter/>
+      <AppHeader />
+      <Content style={{ padding: "0 50px", marginTop: 64 }}>
+        <div>
+          <h1 style={{ background: "#000000", color: "#fff", padding: "20px" }}>
+            Lorem Ipsum е просто примерен текст от печатарската и наборната
+            индустрия. Lorem Ipsum е стандартният примерен текст в индустрията
+            още от 1500-те години, когато неизвестен печатар взема галера от
+            текст и я разбърква, за да създаде примерна книга. Той е оцелял не
+            само пет века, но и скока към електронното наборно оформление,
+            оставайки съществено непроменен. Популяризиран е през 1960-те години
+            с издаването на Letraset листове, съдържащи Lorem Ipsum пасажи, а
+            наскоро и с десктоп издателски софтуер като Aldus PageMaker,
+            включващ версии на Lorem Ipsum.
+          </h1>
+        </div>
+      </Content>
+      <AppFooter />
     </Layout>
   );
 }
-

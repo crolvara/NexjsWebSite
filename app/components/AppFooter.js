@@ -1,22 +1,17 @@
-"use client";
+"use client"
 
-import React, { Component } from 'react';
-import { Layout } from 'antd';
+import React from "react";
+import { Layout } from "antd";
 
 const { Footer } = Layout;
 
-class AppFooter extends Component {
-    render() {
-        return (
-            <Footer
-                style={{
-                    textAlign: 'center',
-                }}
-            >
-                Ant Design ©{new Date().getFullYear()} Created by Ant UED
-            </Footer>
-        );
-    }
+const AppFooter = () => {
+  return (
+    <Footer style={{ textAlign: 'center' }}>
+      ©2024 Created by Your Name
+    </Footer>
+  );
 }
 
 export default AppFooter;
+
